@@ -1,0 +1,31 @@
+[project]
+name = "mealie-importer"
+version = "2024.12.23"
+dependencies = [
+    "sse-starlette==1.8.2",
+    "fastapi==0.105.0",
+    "pydantic==2.5.2",
+    "python-slugify==8.0.1",
+    "requests==2.31.0",
+    "uvicorn==0.25.0",
+]
+requires-python = ">=3.11"
+authors = [
+  {name = "Tobias Persson", email = "tobias.persson@tp-softworks.se"},
+]
+maintainers = [
+  {name = "Tobias Persson", email = "tobias.persson@tp-softworks.se"}
+]
+description = "Import recipes from other sources that mealie does not support!"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["mealie", "importer"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/tp-softworks"
+Repository = "https://github.com/tp-softworks/mealie-import.git"
+"Bug Tracker" = "https://github.com/tp-softworks/mealie-import/issues"

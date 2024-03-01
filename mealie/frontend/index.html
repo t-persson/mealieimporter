@@ -1,0 +1,25 @@
+<!DOCTYLE html>
+<html>
+    <head>
+        <title>Recipe Importer</title>
+    </head>
+    <body>
+        <form id="importer">
+            <fieldset id="import">
+                <label for="recipe">Recipe URL or ID</label><br />
+                <input type="text" id="recipe" name="recipe" /><br />
+                <label for="api">Recipe source</label><br />
+                <select id="api" name="api">
+                    <option value="ica" selected>Ica</option>
+                    <option value="mathem">Mathem</option>
+                </select>
+                <br />
+                <br />
+                <input type="submit" value="Import"/>
+            </fieldset>
+        </form>
+        <br />
+        <div id="messages"></div>
+        <script src="/importer.js"></script>
+    </body>
+</html>
